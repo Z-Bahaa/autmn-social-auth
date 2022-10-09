@@ -1,0 +1,13 @@
+node_modules/
+.history/
+
+# Editors
+.idea/
+.vscode/
+
+build/
+
+# Env Files
+.env
+
+.DS_store

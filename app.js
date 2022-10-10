@@ -3,9 +3,6 @@ const passport = require('passport')
 const Instagram = require('passport-instagram')
 const session = require('express-session')
 
-import { Request } from 'express'
-import { ProfileSchema } from './models/UserProfile'
-
 const app = express()
 
 app.use(passport.initialize());
@@ -43,7 +40,7 @@ app.get(
   })
 );
 
-app.get('/profile', async (req: Request & { profile: ProfileSchema }, res) => {
+app.get('/profile', async (req, res) => {
   console.log(req.profile)
   res.render('profile', req.profile)
 })

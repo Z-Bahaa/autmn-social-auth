@@ -16,7 +16,7 @@ passport.deserializeUser((user, done) => {done(null, user)})
 const instaConfig = {
   clientID: "3381300128859409",
   clientSecret: "7c1bfb405b196166bda8bc867be3a8d6",
-  callbackURL: "https://autmn-social-auth.herokuapp.com/users/auth/instagram/callback/",
+  callbackURL: "https://autmn-social-auth-api.herokuapp.com/users/auth/instagram/callback/",
   profileFields   : ['id','displayName','name','gender','picture.type(large)','email']
 }
 const instaInit = (accessToken, refreshToken, profile, done) => {

@@ -1,11 +1,11 @@
-node_modules/
-.history/
+/node_modules
+/.history
 
 # Editors
-.idea/
-.vscode/
+/.idea
+/.vscode
 
-build/
+/build
 
 # Env Files
 .env
